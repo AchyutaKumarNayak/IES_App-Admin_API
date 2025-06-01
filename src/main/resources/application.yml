@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: Admin_API
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/ORCL
+    username: system
+    password: Achyuta@123
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: achyutakumarn@gmail.com
+    password: hauqxigqwesfjrto
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
