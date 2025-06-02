@@ -1,8 +1,6 @@
 package in.achyuta.rest;
 
-<<<<<<< HEAD
-public class PlanRestController {
-=======
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +52,6 @@ public class PlanRestController {
 		return new ResponseEntity<List<PlanForm>>(fetchAllPlans,HttpStatus.OK);
 		
 	}
->>>>>>> develop
+
 
 }

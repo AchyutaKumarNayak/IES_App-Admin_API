@@ -1,6 +1,5 @@
 package in.achyuta.entities;
 
-<<<<<<< HEAD
 import java.time.LocalDate;
 
 import javax.persistence.CascadeType;
@@ -48,8 +47,5 @@ public class PlanEntity {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "USER_ID")
     private UserEntity user;
-=======
-public class PlanEntity {
 
->>>>>>> develop
 }

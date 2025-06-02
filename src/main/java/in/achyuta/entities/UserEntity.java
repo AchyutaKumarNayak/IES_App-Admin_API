@@ -1,6 +1,5 @@
 package in.achyuta.entities;
 
-<<<<<<< HEAD
 import java.time.LocalDate;
 import java.util.List;
 
@@ -70,8 +69,5 @@ public class UserEntity {
 	
 	
 	
-=======
-public class UserEntity {
->>>>>>> develop
 
 }

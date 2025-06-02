@@ -1,6 +1,5 @@
 package in.achyuta.bindings;
 
-<<<<<<< HEAD
 import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
@@ -19,8 +18,5 @@ public class PlanForm {
 	private LocalDate planStartDate;
 	private LocalDate planEndDate;
 	
-=======
-public class PlanForm {
->>>>>>> develop
 
 }

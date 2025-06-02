@@ -1,6 +1,5 @@
 package in.achyuta.properties;
 
-<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,8 +15,5 @@ import lombok.Data;
 @ConfigurationProperties(prefix = "admin")
 public class AppProperties {
      private Map<String, String> messages= new HashMap<>();
-=======
-public class AppProperties {
 
->>>>>>> develop
 }

@@ -1,6 +1,6 @@
 package in.achyuta.utils;
 
-<<<<<<< HEAD
+
 import javax.mail.internet.MimeMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +34,4 @@ public class EmailUtils {
 		
 		return isSent;
 	}
-=======
-public class EmailUtils {
->>>>>>> develop
-
 }

@@ -1,6 +1,6 @@
 package in.achyuta.services;
 
-<<<<<<< HEAD
+
 import java.util.List;
 
 import in.achyuta.bindings.UnlockAccForm;
@@ -21,8 +21,4 @@ public interface AccountService {
 	
 		
 	
-=======
-public interface AccountService {
->>>>>>> develop
-
 }

@@ -1,6 +1,6 @@
 package in.achyuta.services;
 
-<<<<<<< HEAD
+
 import in.achyuta.bindings.DashBoardCard;
 import in.achyuta.bindings.LoginForm;
 import in.achyuta.bindings.UserAccForm;
@@ -14,8 +14,6 @@ public interface UserService {
 	public DashBoardCard fetchDashBoardInfo();
 	
 	public UserAccForm getUserByEmail(String email);
-=======
-public interface UserService {
->>>>>>> develop
+
 
 }

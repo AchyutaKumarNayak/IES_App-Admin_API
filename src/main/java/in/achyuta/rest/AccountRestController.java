@@ -1,8 +1,5 @@
 package in.achyuta.rest;
 
-<<<<<<< HEAD
-public class AccountRestController {
-=======
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +51,5 @@ public class AccountRestController {
 		 List<UserAccForm> fetchAllUsers = accService.fetchAllUsers();
 		 return new ResponseEntity<>(fetchAllUsers,HttpStatus.OK);
 	}
->>>>>>> develop
 
 }

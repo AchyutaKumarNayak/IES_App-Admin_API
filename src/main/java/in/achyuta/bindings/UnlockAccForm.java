@@ -1,6 +1,5 @@
 package in.achyuta.bindings;
 
-<<<<<<< HEAD
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,8 +15,4 @@ public class UnlockAccForm {
 	private String tempPwd;
 	private String newPwd;
 	private String confirmPwd;
-=======
-public class UnlockAccForm {
-
->>>>>>> develop
 }

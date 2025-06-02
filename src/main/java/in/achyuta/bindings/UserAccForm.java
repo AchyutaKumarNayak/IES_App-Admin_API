@@ -1,6 +1,5 @@
 package in.achyuta.bindings;
 
-<<<<<<< HEAD
 import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
@@ -22,8 +21,5 @@ public class UserAccForm {
 	private Long ssn;
 	private String activeSw;
 	private Integer rollId;
-=======
-public class UserAccForm {
->>>>>>> develop
 
 }
