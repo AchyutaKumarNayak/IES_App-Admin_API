@@ -1,9 +1,14 @@
 package in.achyuta.services;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.Random;
+import java.util.stream.Stream;
+
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import in.achyuta.bindings.UnlockAccForm;
@@ -31,10 +36,10 @@ public class AccountServiceImpl implements AccountService {
 		
 		userRepo.save(userEntity);
 		
-		//Send Mail
 		
-		String subject="";
-		String body="";
+		
+		String subject="User Registration";
+		String body=readEmailBody("USER_REG_EMAIL_BODY.txt", userEntity);
 		
 		
 		return emailUtils.sendMail(form.getEmail(), subject, body);
@@ -102,6 +107,21 @@ public class AccountServiceImpl implements AccountService {
 			builder.append(all.charAt(nextInt));
 		}
 		return builder.toString();
+	}
+	
+	private String readEmailBody(String fileName,UserEntity user) {
+		StringBuilder sb= new StringBuilder();
+		try(Stream<String> lines = Files.lines(Paths.get(fileName))) {
+			lines.forEach(line->{
+				line=line.replaceAll("${FNAME}", user.getUserFullName());
+				line=line.replaceAll("${TEMP_PWD}", user.getUserPwd());
+				line=line.replaceAll("${EMAIL}", user.getUserEmail());
+				sb.append(line);
+			});
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return sb.toString();
 	}
 
 }

@@ -14,6 +14,8 @@ public interface UserService {
 	public DashBoardCard fetchDashBoardInfo();
 	
 	public UserAccForm getUserByEmail(String email);
+	
+	
 
 
 }
